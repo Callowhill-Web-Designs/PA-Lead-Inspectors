@@ -1,0 +1,213 @@
+/*-- -------------------------- -->
+<---    Interior Page Banner   -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #int-banner-1693 {
+    padding: clamp(7rem, 14vw, 10rem) 1rem clamp(3rem, 6vw, 5rem);
+    background: linear-gradient(135deg, #001f3f 0%, #004684 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  #int-banner-1693:before {
+    /* Decorative gradient overlay */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(237, 137, 0, 0.1) 0%, transparent 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #int-banner-1693 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2.5rem, 5vw, 4rem);
+    position: relative;
+    z-index: 10;
+  }
+  #int-banner-1693 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #int-banner-1693 .cs-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  #int-banner-1693 .cs-breadcrumb-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s;
+  }
+  #int-banner-1693 .cs-breadcrumb-link:hover {
+    color: var(--primary);
+  }
+  #int-banner-1693 .cs-breadcrumb-separator {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  #int-banner-1693 .cs-breadcrumb-current {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  #int-banner-1693 .cs-int-title {
+    font-family: var(--headingFontFamily);
+    /* 32px - 48px */
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 1rem 0;
+    color: #fff;
+    max-width: 20ch;
+  }
+  #int-banner-1693 .cs-text {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.6em;
+    margin: 0 0 2rem 0;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 37.5rem;
+  }
+  #int-banner-1693 .cs-stats {
+    width: 100%;
+    max-width: 37.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #int-banner-1693 .cs-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  #int-banner-1693 .cs-stat-number {
+    font-family: var(--headingFontFamily);
+    /* 24px - 32px */
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 900;
+    line-height: 1em;
+    color: var(--primary);
+  }
+  #int-banner-1693 .cs-stat-label {
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;
+    color: #fff;
+    opacity: 0.9;
+  }
+  #int-banner-1693 .cs-button-solid {
+    margin-bottom: 0;
+  }
+  #int-banner-1693 .cs-image-wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #int-banner-1693 .cs-decorative-circle {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary) 0%, rgba(237, 137, 0, 0.5) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  #int-banner-1693 .cs-picture {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  #int-banner-1693 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  #int-banner-1693 .cs-waves {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+  #int-banner-1693 .cs-wave {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #int-banner-1693 {
+    padding: clamp(8rem, 14vw, 12rem) 1rem clamp(4rem, 8vw, 6rem);
+  }
+  #int-banner-1693 .cs-stats {
+    gap: 2rem;
+  }
+  #int-banner-1693 .cs-stat {
+    padding: 1.5rem 1rem;
+  }
+  #int-banner-1693 .cs-image-wrapper {
+    margin-bottom: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #int-banner-1693 .cs-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #int-banner-1693 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    max-width: 50%;
+  }
+  #int-banner-1693 .cs-breadcrumb {
+    justify-content: flex-start;
+  }
+  #int-banner-1693 .cs-int-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+  }
+  #int-banner-1693 .cs-stats {
+    max-width: 100%;
+  }
+  #int-banner-1693 .cs-button-solid {
+    margin-bottom: 0;
+  }
+  #int-banner-1693 .cs-image-wrapper {
+    max-width: 28.125rem;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,57 @@
+---
+title: "The Playground"
+description: ""
+permalink: 'playground/'
+---
+
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/playground.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <section id="int-banner-1693">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-breadcrumb">
+                    <a href="/" class="cs-breadcrumb-link">Home</a>
+                    <span class="cs-breadcrumb-separator">/</span>
+                    <span class="cs-breadcrumb-current">Schedule</span>
+                </div>
+                <h1 class="cs-int-title">Schedule Your Lead Inspection</h1>
+                <p class="cs-text">
+                    Book your EPA-certified lead inspection online. Choose a convenient time and receive your comprehensive report within 24-48 hours.
+                </p>
+                <div class="cs-stats">
+                    <div class="cs-stat">
+                        <span class="cs-stat-number">24-48</span>
+                        <span class="cs-stat-label">Hour Turnaround</span>
+                    </div>
+                    <div class="cs-stat">
+                        <span class="cs-stat-number">EPA</span>
+                        <span class="cs-stat-label">Certified</span>
+                    </div>
+                    <div class="cs-stat">
+                        <span class="cs-stat-number">100%</span>
+                        <span class="cs-stat-label">Accurate Testing</span>
+                    </div>
+                </div>
+                <a href="#scheduler-1693" class="cs-button-solid">Book Now</a>
+            </div>
+            <div class="cs-image-wrapper">
+                <div class="cs-decorative-circle"></div>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/inspector.webp">
+                    <source media="(min-width: 601px)" srcset="/assets/images/inspector.webp">
+                    <img decoding="async" src="/assets/images/inspector.webp" alt="inspector" width="630" height="630" loading="eager">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

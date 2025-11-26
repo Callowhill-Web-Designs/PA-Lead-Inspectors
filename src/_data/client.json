@@ -1,8 +1,8 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
+    "name": "PA Lead Inspectors",
+    "email": "matthew@paleadinspect.com",
+    "phoneForTel": "123-456-7890",
+    "phoneFormatted": "(123) 456-7890",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
@@ -17,5 +17,5 @@
         "instagram": "https://www.instagram.com/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://www.codestitch.app"
+    "domain": "https://www.paleadinspect.com"
 }

@@ -1,0 +1,219 @@
+---
+title: "Schedule Your Lead Inspection | PA Lead Inspectors"
+description: "Schedule a certified lead inspection for your Pennsylvania property. Fast, professional service with flexible scheduling. Book your appointment today."
+permalink: 'schedule/'
+eleventyNavigation:
+    key: 'Schedule'
+    order: '500'
+---
+
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/schedule.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <section id="int-banner-1693">
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/inspector2.jpeg">
+            <source media="(min-width: 601px)" srcset="/assets/images/inspector2.jpeg">
+            <img loading="lazy" decoding="async" src="/assets/images/inspector2.jpeg" alt="lead inspector" width="1920" height="1080" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-breadcrumb">
+                    <a href="/" class="cs-breadcrumb-link">Home</a>
+                    <span class="cs-breadcrumb-separator">/</span>
+                    <span class="cs-breadcrumb-current">Schedule</span>
+                </div>
+                <h1 class="cs-int-title">Schedule Your Lead Inspection</h1>
+                <p class="cs-text">
+                    Book your EPA-certified lead inspection online. Choose a convenient time and receive your comprehensive report within 24-48 hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Scheduler                   -->
+    <!-- ============================================ -->
+
+    <section id="scheduler">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Book Online</span>
+                <h2 class="cs-title">Choose Your Appointment Time</h2>
+                <p class="cs-text">
+                    Select a convenient date and time from our available slots. Our certified inspectors serve properties throughout Pennsylvania with flexible scheduling including evenings and weekends.
+                </p>
+            </div>
+            <div class="cs-embed-wrapper">
+                <div id="zcal-inline-widget"></div>
+                <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+                <div class="zcal-inline-widget" data-zcal-options='{"showBackground":1}'>
+                <a href="https://zcal.co/mbarkann">Schedule a meeting</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              Appointment Info                -->
+    <!-- ============================================ -->
+
+    <section id="appointment-info-1693">
+        <div class="cs-container">
+            <div class="cs-info-wrapper">
+                <div class="cs-info-section">
+                    <div class="cs-info-header">
+                        <svg class="cs-info-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <h3 class="cs-info-title">How to Prepare</h3>
+                    </div>
+                    <ul class="cs-info-list">
+                        <li class="cs-info-item">
+                            <strong>Clear Access:</strong> Ensure our inspector can access all areas of the property including closets, basements, and attics.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Remove Obstacles:</strong> Move furniture or items blocking walls, windows, doors, and trim where paint testing will occur.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Pets:</strong> Please secure pets in a separate room or area during the inspection.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Utilities:</strong> Make sure electricity and water are turned on for the inspection.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Property Access:</strong> Provide keys, gate codes, or any necessary access information prior to the appointment.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cs-info-section">
+                    <div class="cs-info-header">
+                        <svg class="cs-info-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                        <h3 class="cs-info-title">Cancellation Policy</h3>
+                    </div>
+                    <div class="cs-policy-content">
+                        <p class="cs-policy-text">
+                            We understand that schedules change. If you need to reschedule or cancel your appointment, please provide at least 24 hours notice.
+                        </p>
+                        <ul class="cs-info-list">
+                            <li class="cs-info-item">
+                                <strong>24+ Hours Notice:</strong> Full refund or free rescheduling, no questions asked.
+                            </li>
+                            <li class="cs-info-item">
+                                <strong>Less than 24 Hours:</strong> 50% cancellation fee may apply.
+                            </li>
+                            <li class="cs-info-item">
+                                <strong>No Show:</strong> Full inspection fee will be charged.
+                            </li>
+                        </ul>
+                        <p class="cs-policy-note">
+                            To cancel or reschedule, please call us at <a href="tel:{{ client.phoneForTel }}" class="cs-phone-link">{{ client.phoneFormatted }}</a> or email <a href="mailto:{{ client.email }}" class="cs-email-link">{{ client.email }}</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cs-info-section">
+                    <div class="cs-info-header">
+                        <svg class="cs-info-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3 class="cs-info-title">What to Expect</h3>
+                    </div>
+                    <ul class="cs-info-list">
+                        <li class="cs-info-item">
+                            <strong>Duration:</strong> Most inspections take 2-4 hours depending on property size.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Process:</strong> Our EPA-certified inspector will test painted surfaces throughout the property.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Report:</strong> Receive your comprehensive inspection report within 24-48 hours.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Presence:</strong> You don't need to be present during the inspection, but you're welcome to be there.
+                        </li>
+                        <li class="cs-info-item">
+                            <strong>Questions:</strong> We'll contact you immediately if we find any lead hazards or have questions.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="contact-1693">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Need Help?</span>
+                <h2 class="cs-title">Questions About Scheduling?</h2>
+                <p class="cs-text">
+                    Can't find a time that works? Have questions about the inspection process? Our team is here to help. Reach out and we'll get back to you right away.
+                </p>
+                <div class="cs-contact-info">
+                    <a href="tel:{{ client.phoneForTel }}" class="cs-contact-card">
+                        <svg class="cs-card-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <div class="cs-card-content">
+                            <span class="cs-card-label">Call Us</span>
+                            <span class="cs-card-value">{{ client.phoneFormatted }}</span>
+                        </div>
+                    </a>
+                    <a href="mailto:{{ client.email }}" class="cs-contact-card">
+                        <svg class="cs-card-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <div class="cs-card-content">
+                            <span class="cs-card-label">Email Us</span>
+                            <span class="cs-card-value">{{ client.email }}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <form class="cs-form" name="Contact Form" method="post" action="/success" netlify>
+                <h3 class="cs-form-title">Send Us a Message</h3>
+                <label class="cs-label">
+                    Name *
+                    <input class="cs-input" required type="text" id="name" name="name" placeholder="Your Name">
+                </label>
+                <label class="cs-label">
+                    Email *
+                    <input class="cs-input" required type="email" id="email" name="email" placeholder="your@email.com">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                </label>
+                <label class="cs-label">
+                    Property Address
+                    <input class="cs-input" type="text" id="address" name="address" placeholder="Property to be inspected">
+                </label>
+                <label class="cs-label">
+                    Message *
+                    <textarea class="cs-input cs-textarea" required name="message" id="message" placeholder="Tell us about your needs..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}

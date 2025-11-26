@@ -1,77 +1,97 @@
 ---
-title: "The Main Branch"
-description: "The main branch of the advanced starter kit. Contains a basic 11ty setup for clients not needing much
-additional functionality. Similar to our Intermediate Kits."
+title: "PA Lead Inspectors | Certified Lead Testing & Inspection Services"
+description: "Professional lead inspection and testing services throughout Pennsylvania. EPA certified inspectors providing comprehensive lead-based paint assessments for homes and commercial properties."
 permalink: '/'
 eleventyNavigation:
-    key: 'Main'
+    key: 'Home'
     order: '100'
 ---
 
 {% block head %}
+    <link rel="stylesheet" href="/assets/css/critical.css">
     <link rel="stylesheet" href="/assets/css/local.css">
+    <script src="/assets/js/particles.js" defer></script>
+    <script src="/assets/js/stats-animation.js" defer></script>
 {% endblock %}
 
 {% extends 'layouts/base.html' %}
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    Hero                      -->
+    <!--              Home Hero Section               -->
     <!-- ============================================ -->
 
-    <section id="hero-1621">
+    <section id="hero-home">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">For any small business need</span>
+                <span class="cs-topper">EPA Certified Lead Inspections</span>
                 <h1 class="cs-title">
-                    The CodeStitch Advanced Starter Kit - Main Branch
+                    Protecting Pennsylvania Families From Lead Hazards
                 </h1>
-                <a href="" class="cs-button-solid">Call to Action</a>
-                <!--Bottom Corners-->
-                <div class="cs-corners" aria-hidden="true"></div>
+                <p class="cs-text">
+                    Professional lead-based paint inspection and risk assessment services for homes, commercial properties, and childcare facilities throughout Pennsylvania.
+                </p>
+                <a href="tel:+8419853399" class="cs-button-solid">Schedule Inspection</a>
             </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-styles.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">LESS/SASS</h2>
-                    <p class="cs-item-text">
-                        Both preprocessors, alongside vanilla CSS, all available under one kit
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-optimize.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">Optimization</h2>
-                    <p class="cs-item-text">
-                        Get better Pagespeed scores, quicker, with automatic critical CSS inlining, minifiction and asset optimization
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-cart.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">eCommerce</h2>
-                    <p class="cs-item-text">
-                        Create the fastest of eCommerce stores with a seamless Shopify integration
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-cms.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">CMS</h2>
-                    <p class="cs-item-text">
-                        Free time and empower your clients with a Decap content management system
-                    </p>
-                </li>
-            </ul>
         </div>
 
         <!-- Background Image -->
         <picture class="cs-background">
             <source media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2-m.jpeg">
+            srcset="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80">
             <source media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2.jpeg">
+            srcset="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80">
             <img loading="lazy" decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2.jpeg" alt="meeting" width="1920"
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80" alt="modern home exterior" width="1920"
             height="1200" aria-hidden="true">
         </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              Services Stats Banner           -->
+    <!-- ============================================ -->
+
+    <section id="services-stats">
+        <div class="cs-container">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18H9M14 6H10M20 3H19M19 3H5M19 3C19 5.51022 17.7877 7.86592 15.7451 9.32495L12 12M5 3H4M5 3C5 5.51022 6.21228 7.86592 8.25493 9.32495L12 12M20 21H19M19 21H5M19 21C19 18.4898 17.7877 16.1341 15.7451 14.675L12 12M5 21H4M5 21C5 18.4898 6.21228 16.1341 8.25493 14.675L12 12" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="cs-stat-content">
+                        <span class="cs-number">15+</span>
+                        <span class="cs-desc">Years Experience</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5.00005C7.01165 5.00082 6.49359 5.01338 6.09202 5.21799C5.71569 5.40973 5.40973 5.71569 5.21799 6.09202C5 6.51984 5 7.07989 5 8.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.07989 21 8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V8.2C19 7.07989 19 6.51984 18.782 6.09202C18.5903 5.71569 18.2843 5.40973 17.908 5.21799C17.5064 5.01338 16.9884 5.00082 16 5.00005M8 5.00005V7H16V5.00005M8 5.00005V4.70711C8 4.25435 8.17986 3.82014 8.5 3.5C8.82014 3.17986 9.25435 3 9.70711 3H14.2929C14.7456 3 15.1799 3.17986 15.5 3.5C15.8201 3.82014 16 4.25435 16 4.70711V5.00005M16 11H14M16 16H14M8 11L9 12L11 10M8 16L9 17L11 15" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="cs-stat-content">
+                        <span class="cs-number">1000+</span>
+                        <span class="cs-desc">Inspections Completed</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.06152 12C5.55362 8.05369 8.92001 5 12.9996 5C17.4179 5 20.9996 8.58172 20.9996 13C20.9996 17.4183 17.4179 21 12.9996 21H8M13 13V9M11 3H15M3 15H8M5 18H10" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="cs-stat-content">
+                        <span class="cs-number">24-48</span>
+                        <span class="cs-desc">Hour Report Turnaround</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 12L11 14L15 9.99999M20 12C20 16.4611 14.54 19.6937 12.6414 20.683C12.4361 20.79 12.3334 20.8435 12.191 20.8712C12.08 20.8928 11.92 20.8928 11.809 20.8712C11.6666 20.8435 11.5639 20.79 11.3586 20.683C9.45996 19.6937 4 16.4611 4 12V8.21759C4 7.41808 4 7.01833 4.13076 6.6747C4.24627 6.37113 4.43398 6.10027 4.67766 5.88552C4.9535 5.64243 5.3278 5.50207 6.0764 5.22134L11.4382 3.21067C11.6461 3.13271 11.75 3.09373 11.857 3.07827C11.9518 3.06457 12.0482 3.06457 12.143 3.07827C12.25 3.09373 12.3539 3.13271 12.5618 3.21067L17.9236 5.22134C18.6722 5.50207 19.0465 5.64243 19.3223 5.88552C19.566 6.10027 19.7537 6.37113 19.8692 6.6747C20 7.01833 20 7.41808 20 8.21759V12Z" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="cs-stat-content">
+                        <span class="cs-number">100%</span>
+                        <span class="cs-desc">EPA Certified Inspectors</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- ============================================ -->
@@ -81,31 +101,31 @@ eleventyNavigation:
     <section id="sbs-523">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">How it works</span>
-                <h2 class="cs-title">What makes this kit special</h2>
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Comprehensive Lead Inspection Services</h2>
                 <p class="cs-text">
-                    Behind the kit is careful management of the file structure, such that all shared code lives in the "main" branch. Each feature then lives on a separate branch, allowing you to choose what capabilities the project requires.
+                    PA Lead Inspectors provides thorough lead-based paint inspections and risk assessments for residential and commercial properties across Pennsylvania. Our EPA-certified inspectors use state-of-the-art XRF technology to detect lead hazards accurately and efficiently.
                 </p>
                 <p class="cs-text">
-                    Some files, namely "package.json", "package-lock.json", ".eleventy.js", and "_includes/base.html", require additions to them when merging new branches. Cloning the repo from a template loses all commit history, so conflicts will arise in these files. These can be resolved by ensuring all unique code is merged into the project.
+                    We serve homeowners, real estate professionals, property managers, childcare facilities, and contractors who need reliable lead testing to ensure compliance with federal and state regulations. Our services include pre-purchase inspections, renovation assessments, and clearance testing.
                 </p>
                 <p class="cs-text">
-                    As such, a basic knowledge of Git is required before using this kit, with a solid grasp of how to resolve merge conflicts strongly advisable. You are welcome to merge in feature branches at a later date, after building the project up, but this may result in more complicated merges.
+                    Every inspection includes a detailed written report with clear findings, color-coded diagrams, and specific recommendations for remediation if lead hazards are found. We work closely with certified lead abatement contractors to ensure your property is safe.
                 </p>
-                <a href="" class="cs-button-solid">Read More</a>
+                <a href="" class="cs-button-solid">View All Services</a>
             </div>
             <div class="cs-image-group">
                 <!--Large Image-->
                 <picture class="cs-picture cs-picture-large">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg" alt="lab" width="334" height="380">
+                    <source media="(max-width: 600px)" srcset="/assets/images/familystock.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/familystock.jpeg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/familystock.jpeg" alt="happy family entering home" width="334" height="380">
                 </picture>
                 <!--Small Image-->
                 <picture class="cs-picture cs-picture-small">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg" alt="lab" width="183" height="158">
+                    <source media="(max-width: 600px)" srcset="/assets/images/inspector2.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/inspector2.jpeg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/inspector2.jpeg" alt="testing equipment" width="183" height="158">
                 </picture>
             </div>
         </div>
@@ -118,51 +138,58 @@ eleventyNavigation:
     <section id="steps-1172">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Just a few steps before</span>
-                <h2 class="cs-title">How To Get Started</h2>
+                <span class="cs-topper">Simple Process</span>
+                <h2 class="cs-title">How Our Inspection Process Works</h2>
                 <p class="cs-text">
-                    As this kit relies on merging different branches to get started, we'll need to do a few things first to ensure this happens smoothly and nothing gets missed.
+                    We make lead testing straightforward and stress-free. From scheduling to receiving your detailed report, our process is designed for efficiency and accuracy.
                 </p>
             </div>
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-git.svg" alt="icon" width="48" height="48">
+                        <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9H21M7 3V5M17 3V5M6 12H8M11 12H13M16 12H18M6 15H8M11 15H13M16 15H18M6 18H8M11 18H13M16 18H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#ED8900" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
                     </picture>
-                    <h2 class="cs-h3">1. Merge Branches</h2>
+                    <h2 class="cs-h3">1. Schedule Your Inspection</h2>
                     <p class="cs-item-text">
-                        Merge the branches you need for the project via the CLI, using "git merge [BRANCH] --allow-unrelated-histories". Resolve any conflicts.
+                        Contact us by phone or online to schedule your lead inspection. Same-day and next-day appointments are often available.
                     </p>
                 </li>
 
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-install.svg" alt="icon" width="48" height="48">
+                        <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 6C13.7614 6 16 8.23858 16 11M16.6588 16.6549L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </picture>
-                    <h2 class="cs-h3">2. Install Dependencies</h2>
+                    <h2 class="cs-h3">2. Professional Inspection</h2>
                     <p class="cs-item-text">
-                        Run "npm install" to install all the packages and plugins needed to make your super awesome website.
+                        Our EPA-certified inspector arrives on time and conducts a thorough assessment using XRF technology and lab sampling.
                     </p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-todo.svg" alt="icon" width="48" height="48">
+                        <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H15.8C16.9201 21 17.4802 21 17.908 20.782C18.2843 20.5903 18.5903 20.2843 18.782 19.908C19 19.4802 19 18.9201 19 17.8V9M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M15 12.21C14.9318 12.2141 14.7357 12.21 14.6667 12.21C13.6422 12.21 12.7077 11.7524 12 11C11.2923 11.7524 10.3578 12.2099 9.33333 12.2099C9.26426 12.2099 9.06837 12.2141 9.00016 12.21C9.00016 12.21 9 12.9855 9 13.3979C9 15.6121 10.2748 17.4725 12 18C13.7252 17.4725 15 15.6121 15 13.3979C15 12.9855 15 12.21 15 12.21Z" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </picture>
-                    <h2 class="cs-h3">3. Check Off Todos</h2>
+                    <h2 class="cs-h3">3. Receive Detailed Report</h2>
                     <p class="cs-item-text">
-                        Search the project for any instance of "CS-TODO". We've marked any actions that need to be taken to get your project up to speed ASAP.
+                        Get your comprehensive inspection report within 24-48 hours, including all findings, diagrams, and recommendations.
                     </p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-code.svg" alt="icon" width="48" height="48">
+                        <svg class="cs-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C6.78894 20.7499 6.95082 20.8087 7.13202 20.8537M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M19 5.00002V16.2C19 17.8802 19 18.7203 18.673 19.362C18.3854 19.9265 17.9265 20.3854 17.362 20.673C17.2111 20.7499 17.0492 20.8087 16.868 20.8537M7.13202 20.8537C7.65017 18.6448 9.63301 17 12 17C14.367 17 16.3498 18.6448 16.868 20.8537M7.13202 20.8537C7.72133 21 8.51495 21 9.8 21H14.2C15.485 21 16.2787 21 16.868 20.8537M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </picture>
-                    <h2 class="cs-h3">4. Get Developing!</h2>
-                    <p class="cs-item-text">If using the sass/less branch, you can move over the starter styles to get a headstart. Otherwise, clear all page data and styles, and begin!</p>
+                    <h2 class="cs-h3">4. Take Action</h2>
+                    <p class="cs-item-text">We provide clear guidance on next steps and can connect you with certified lead abatement contractors if needed.</p>
                 </li>
             </ul>
         </div>
-        <!--Tire Screech-->
     </section>
 
     <!-- ============================================ -->
@@ -172,50 +199,62 @@ eleventyNavigation:
     <section id="why-choose-1657">
         <div class="cs-container">
             <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">CSS, LESS and SASS</span>
-                    <h2 class="cs-title">Your favourite CSS syntaxes - all under one roof</h2>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <span class="cs-number">CSS</span>
-                        <p class="cs-li-text">
-                            If you prefer vanilla CSS, everything has already been set up for you. You shouldn't need to merge in the SASS and LESS branches, and the ./starter-styles folder can be deleted.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">LESS</span>
-                        <p class="cs-li-text">
-                            If you want to use the LESS preprocessor, make sure the "less" branch has been merged to include the LESS processor. When all branches have been merged, you can find the kit styles in ./starter-styles. Copy these over to /assets/less, or delete them to start from scratch.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">SASS</span>
-                        <p class="cs-li-text">
-                            Same as before - merge in the "sass" branch to include the SASS processor. Delete the ./starter-styles folder or copy over the SASS styles into /assets/sass to get a headstart on the project
-                        </p>
-                    </li>
-                </ul>
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">The PA Lead Inspectors Difference</h2>
+                <p class="cs-text">When it comes to protecting your family and property from lead hazards, experience and certification matter. Here's why Pennsylvania homeowners and businesses trust us.</p>
             </div>
-            <div class="cs-wrapper">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting" width="630" height="414">
-                </picture>
-
-                <p class="cs-review">
-                    <svg class="cs-quote" preserveAspectRatio="none" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg" preser>
-                        <g opacity=".4" clip-path="url(#a)" fill="var(--quoteColor)"><path d="M22.94 84H0L18.305.854H55L22.94 84ZM67.94 84H45L63.305.854H100L67.94 84Z"/></g>
-                        <defs>
-                            <clipPath id="a-1657"><path fill="#fff" transform="translate(0 .854)" d="M0 0h100v83.146H0z"/></clipPath>
-                        </defs>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 12L11 14L15 10M12 3L13.9101 4.87147L16.5 4.20577L17.2184 6.78155L19.7942 7.5L19.1285 10.0899L21 12L19.1285 13.9101L19.7942 16.5L17.2184 17.2184L16.5 19.7942L13.9101 19.1285L12 21L10.0899 19.1285L7.5 19.7942L6.78155 17.2184L4.20577 16.5L4.87147 13.9101L3 12L4.87147 10.0899L4.20577 7.5L6.78155 6.78155L7.5 4.20577L10.0899 4.87147L12 3Z"/>
                     </svg>
-                    To minimise the number of merge conflicts, vanilla CSS for these introductory pages are supplied in /assets. Should you wish to carry over the starting kit styles, LESS and SASS versions are supplied outside of ./src
-                </p>
-            </div>
+                    <h3 class="cs-h3">EPA Certified</h3>
+                    <p class="cs-item-text">All our inspectors are fully EPA-certified and trained in the latest lead testing methods and regulations. We meet all federal and state requirements.</p>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <h3 class="cs-h3">Fast Turnaround</h3>
+                    <p class="cs-item-text">We understand time is critical. Get your comprehensive inspection report within 24-48 hours of your inspection, so you can make informed decisions quickly.</p>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                    <h3 class="cs-h3">Detailed Reports</h3>
+                    <p class="cs-item-text">Receive clear, comprehensive reports with photos, lab results, and actionable recommendations. No confusing jargon—just the facts you need.</p>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <h3 class="cs-h3">Local Expertise</h3>
+                    <p class="cs-item-text">As Pennsylvania specialists, we understand local regulations and housing stock. We've inspected thousands of homes across the state.</p>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <h3 class="cs-h3">Customer Focused</h3>
+                    <p class="cs-item-text">Your safety and satisfaction are our top priorities. We offer flexible scheduling, transparent pricing, and friendly service every step of the way.</p>
+                </li>
+                <li class="cs-item">
+                    <svg class="cs-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ED8900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    <h3 class="cs-h3">Proven Track Record</h3>
+                    <p class="cs-item-text">Trusted by homeowners, realtors, and property managers throughout Pennsylvania. Our reputation is built on accuracy, reliability, and professionalism.</p>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -227,26 +266,22 @@ eleventyNavigation:
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-image-group">
-                <!--Floating Box-->
-                <div class="cs-box">
-                    <span class="cs-desc">Building a better website, together</span>
-                </div>
                 <!--Image-->
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg" alt="meeting" width="630" height="630" aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Pennsylvania cityscape" width="630" height="630" aria-hidden="true">
                 </picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-content">
-                <span class="cs-topper">Help & Support</span>
-                <h2 class="cs-title">Guidance every step of the way</h2>
-                <p class="cs-text">Outside of a cool new feature, each branch comes with an introductory landing page (just like this one) and a branch-specific README. The landing page gives you a quick overview of the branch, with the README providing more technical details should you wish to expand.</p>
-                <p class="cs-text">Additionally, all project-critical actions that need to be taken have a comment containing "CS-TODO". After merging in your branches, you can search the codebase for "CS-TODO", find the most important changes that need to be made, and action them effortlessly.</p>
-                <p class="cs-text">Finally, if you are still stuck or find a bug in the kit, you can use the CTAs in the header to get directly in touch with the kit creators, or reach out to a community of hundreds of other developers.</p>
-                <p class="cs-text">The kit continues to be supported going forward, with a complete set of tutorial videos and additional feature branches planned in the very near future. Follow our subreddit to stay up to date!</p>
-                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+                <span class="cs-topper">Service Areas</span>
+                <h2 class="cs-title">Professional Lead Testing Throughout Pennsylvania</h2>
+                <p class="cs-text">PA Lead Inspectors provides certified lead inspection services to communities across Pennsylvania. Whether you're in Philadelphia, Pittsburgh, Harrisburg, or anywhere in between, our EPA-certified inspectors are ready to help protect your family or business from lead hazards.</p>
+                <p class="cs-text">We work with homeowners, real estate agents, property managers, landlords, childcare facilities, and contractors to ensure properties are safe and compliant with all federal and state lead regulations. Our service areas include all major metropolitan areas and surrounding counties.</p>
+                <p class="cs-text">Need a lead inspection in Pennsylvania? We offer flexible scheduling including evenings and weekends to accommodate your busy schedule. Our inspectors arrive on time, work efficiently, and provide clear communication throughout the entire process.</p>
+                <p class="cs-text">Don't wait to protect your family or ensure your property is compliant. Contact PA Lead Inspectors today to schedule your professional lead inspection and get the peace of mind you deserve.</p>
+                <a class="cs-button-solid" aria-label="schedule your inspection" href="/schedule">Schedule Your Inspection</a>
             </div>
         </div>
     </section>

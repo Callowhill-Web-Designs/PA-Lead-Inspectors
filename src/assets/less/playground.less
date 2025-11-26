@@ -1,0 +1,248 @@
+/*-- -------------------------- -->
+<---    Interior Page Banner   -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #int-banner-1693 {
+        padding: clamp(7rem, 14vw, 10rem) (16/16rem) clamp(3rem, 6vw, 5rem);
+        background: linear-gradient(135deg, #001f3f 0%, #004684 100%);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        &:before {
+            /* Decorative gradient overlay */
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(237, 137, 0, 0.1) 0%, transparent 60%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2.5rem, 5vw, 4rem);
+            position: relative;
+            z-index: 10;
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: (12/16rem);
+            margin-bottom: (24/16rem);
+        }
+
+        .cs-breadcrumb-link {
+            font-size: (14/16rem);
+            font-weight: 600;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        .cs-breadcrumb-separator {
+            font-size: (14/16rem);
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .cs-breadcrumb-current {
+            font-size: (14/16rem);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .cs-int-title {
+            font-family: var(--headingFontFamily);
+            /* 32px - 48px */
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0 0 (16/16rem) 0;
+            color: #fff;
+            max-width: 20ch;
+        }
+
+        .cs-text {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            line-height: 1.6em;
+            margin: 0 0 (32/16rem) 0;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: (600/16rem);
+        }
+
+        .cs-stats {
+            width: 100%;
+            max-width: (600/16rem);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: (24/16rem);
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: (8/16rem);
+            padding: (20/16rem) (12/16rem);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: (12/16rem);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cs-stat-number {
+            font-family: var(--headingFontFamily);
+            /* 24px - 32px */
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 900;
+            line-height: 1em;
+            color: var(--primary);
+        }
+
+        .cs-stat-label {
+            font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+            font-weight: 600;
+            line-height: 1.2em;
+            text-align: center;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .cs-button-solid {
+            margin-bottom: 0;
+        }
+
+        .cs-image-wrapper {
+            width: 100%;
+            max-width: (500/16rem);
+            margin-bottom: (40/16rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-decorative-circle {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, rgba(237, 137, 0, 0.5) 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: (20/16rem);
+            left: (20/16rem);
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 8px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            display: block;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .cs-waves {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+        }
+
+        .cs-wave {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #int-banner-1693 {
+        padding: clamp(8rem, 14vw, 12rem) (16/16rem) clamp(4rem, 8vw, 6rem);
+
+        .cs-stats {
+            gap: (32/16rem);
+        }
+
+        .cs-stat {
+            padding: (24/16rem) (16/16rem);
+        }
+
+        .cs-image-wrapper {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #int-banner-1693 {
+        .cs-container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            text-align: left;
+            align-items: flex-start;
+            max-width: 50%;
+        }
+
+        .cs-breadcrumb {
+            justify-content: flex-start;
+        }
+
+        .cs-int-title {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+        }
+
+        .cs-stats {
+            max-width: 100%;
+        }
+
+        .cs-button-solid {
+            margin-bottom: 0;
+        }
+
+        .cs-image-wrapper {
+            max-width: (450/16rem);
+            flex-shrink: 0;
+        }
+    }
+}
