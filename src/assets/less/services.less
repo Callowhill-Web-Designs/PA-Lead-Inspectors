@@ -1,0 +1,477 @@
+/*-- -------------------------- -->
+<---       Service Types        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-types-1693 {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: (800/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-services-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: (32/16rem);
+        }
+
+        .cs-service-card {
+            padding: (40/16rem) (32/16rem);
+            background: #f7f7f7;
+            border-radius: (12/16rem);
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .cs-service-header {
+            display: flex;
+            align-items: center;
+            gap: (20/16rem);
+            margin-bottom: (24/16rem);
+        }
+
+        .cs-service-icon {
+            width: (48/16rem);
+            height: (48/16rem);
+            flex-shrink: 0;
+        }
+
+        .cs-service-title {
+            font-family: var(--headingFontFamily);
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-service-text {
+            font-size: (16/16rem);
+            line-height: 1.6em;
+            margin: 0 0 (24/16rem) 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-service-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: (12/16rem);
+        }
+
+        .cs-service-item {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            list-style: none;
+            color: var(--bodyTextColor);
+            padding-left: (28/16rem);
+            position: relative;
+
+            &:before {
+                content: '';
+                width: (10/16rem);
+                height: (10/16rem);
+                background-color: var(--primary);
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: (7/16rem);
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-types-1693 {
+        .cs-services-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: (40/16rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-types-1693 {
+        .cs-service-card {
+            padding: (48/16rem) (40/16rem);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      Lead Dust Testing     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #lead-dust-1693 {
+        padding: var(--sectionPadding);
+        background: linear-gradient(135deg, #001f3f 0%, #004684 100%);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url('/assets/images/inspector.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: (800/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-topper {
+            color: var(--primary);
+        }
+
+        .cs-title {
+            margin: 0 0 (16/16rem) 0;
+            color: #fff;
+        }
+
+        .cs-text {
+            margin-bottom: (32/16rem);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cs-reasons-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: (24/16rem);
+        }
+
+        .cs-reason-card {
+            padding: (32/16rem) (24/16rem);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-radius: (12/16rem);
+            border: 2px solid transparent;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+
+            &:hover {
+                transform: translateY(-4px);
+                border-color: var(--primary);
+                box-shadow: 0 12px 32px rgba(237, 137, 0, 0.3);
+            }
+        }
+
+        .cs-reason-icon {
+            width: (40/16rem);
+            height: (40/16rem);
+            margin-bottom: (16/16rem);
+        }
+
+        .cs-reason-title {
+            font-family: var(--headingFontFamily);
+            font-size: (20/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 (12/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-reason-text {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #lead-dust-1693 {
+        .cs-reasons-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: (32/16rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #lead-dust-1693 {
+        .cs-reasons-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---        Why Choose Us       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #why-choose-pa-1693 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: (800/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-topper {
+            color: var(--primary);
+        }
+
+        .cs-title {
+            margin: 0 0 (16/16rem) 0;
+        }
+
+        .cs-text {
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-features-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: (24/16rem);
+            margin-bottom: (40/16rem);
+        }
+
+        .cs-feature-card {
+            padding: (32/16rem) (24/16rem);
+            background: #fff;
+            border-radius: (12/16rem);
+            border: 2px solid transparent;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: translateY(-8px);
+                border-color: var(--primary);
+                box-shadow: 0 12px 32px rgba(237, 137, 0, 0.2);
+            }
+        }
+
+        .cs-feature-icon {
+            width: (48/16rem);
+            height: (48/16rem);
+            margin-bottom: (16/16rem);
+        }
+
+        .cs-feature-title {
+            font-family: var(--headingFontFamily);
+            font-size: (20/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 (12/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-feature-text {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-certification-badge {
+            padding: (32/16rem) (24/16rem);
+            background: #fff;
+            border-radius: (12/16rem);
+            border: 3px solid var(--primary);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            margin-bottom: (40/16rem);
+        }
+
+        .cs-badge-icon {
+            width: (64/16rem);
+            height: (64/16rem);
+            margin: 0 auto (16/16rem);
+            display: block;
+        }
+
+        .cs-badge-title {
+            font-family: var(--headingFontFamily);
+            font-size: (24/16rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0 0 (8/16rem) 0;
+            color: var(--primary);
+        }
+
+        .cs-badge-text {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-button-group {
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+            width: 100%;
+            max-width: (400/16rem);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #why-choose-pa-1693 {
+        .cs-features-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: (32/16rem);
+        }
+
+        .cs-button-group {
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: center;
+        }
+
+        .cs-button-solid,
+        .cs-button-outline {
+            width: auto;
+            min-width: (200/16rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #why-choose-pa-1693 {
+        .cs-features-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-types-1693 {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .cs-service-card {
+                background-color: rgba(0, 0, 0, 0.4);
+                border-left-color: var(--primary);
+            }
+
+            .cs-service-title {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-service-text,
+            .cs-service-item {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+
+        #lead-dust-1693 {
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+
+        #why-choose-pa-1693 {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-feature-card {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            .cs-feature-title,
+            .cs-feature-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-certification-badge {
+                background: rgba(0, 0, 0, 0.6);
+            }
+
+            .cs-badge-title {
+                color: var(--primary);
+            }
+
+            .cs-badge-text {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
