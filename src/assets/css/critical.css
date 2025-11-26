@@ -418,21 +418,3 @@
     padding: 6.25rem 1rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #services-stats {
-    background-color: var(--dark);
-    border-top-color: var(--primary);
-    border-bottom-color: var(--primary);
-  }
-  body.dark-mode #services-stats .cs-item:not(:last-of-type) {
-    border-right-color: rgba(255, 255, 255, 0.1);
-  }
-  body.dark-mode #services-stats .cs-item:nth-of-type(3),
-  body.dark-mode #services-stats .cs-item:nth-of-type(4) {
-    border-top-color: rgba(255, 255, 255, 0.1);
-  }
-  body.dark-mode #services-stats .cs-desc {
-    color: var(--bodyTextColorWhite);
-  }
-}

@@ -150,33 +150,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #sbs-523 {
-            .cs-title,
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-text {
-                opacity: 0.8;
-            }
-
-            .cs-image-group {
-                &:before {
-                    background-color: var(--secondary);
-                    opacity: 0.3;
-                }
-            }
-
-            .cs-picture-small {
-                border-color: var(--dark);
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
@@ -366,27 +339,6 @@
     }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #steps-1172 {
-            background-color: rgba(0, 0, 0, 0.3);
-
-            .cs-title,
-            .cs-text,
-            .cs-item-text,
-            .cs-h3 {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-text,
-            .cs-item-text {
-                opacity: 0.8;
-            }
-        }
-    }
-}
-
 /*-- -------------------------- -->
 <---      Why Choose Us         -->
 <--- -------------------------- -*/
@@ -541,40 +493,6 @@
     #why-choose-1657 {
         .cs-item {
             grid-column: span 4;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #why-choose-1657 {
-            background-color: #000;
-
-            &:before {
-                opacity: 0.3;
-            }
-
-            .cs-title,
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-h3,
-            .cs-item-text {
-                color: var(--headerColor);
-            }
-
-            .cs-item {
-                background: rgba(255, 255, 255, 0.98);
-                border-color: rgba(237, 137, 0, 0.3);
-
-                &:hover {
-                    border-color: var(--primary);
-                    background: rgba(255, 255, 255, 1);
-                    box-shadow: 0 16px 32px rgba(237, 137, 0, 0.4);
-                }
-            }
         }
     }
 }
@@ -741,30 +659,6 @@
             right: (130/16rem);
             left: auto;
             transform: translateY(-50%);
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #sbsr-1309 {
-            .cs-title,
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-link {
-                color: var(--secondaryLight);
-            }
-
-            .cs-text {
-                opacity: 0.8;
-            }
-
-            .cs-box {
-                background-color: var(--medium);
-            }
         }
     }
 }
