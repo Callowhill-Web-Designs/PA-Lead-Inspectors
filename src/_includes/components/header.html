@@ -53,13 +53,19 @@
                         {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes#}
                         <li class="cs-li {% if hasChild %} cs-dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
 
-                            {# Similarly, if the link is active, apply the necessary classes #}
-                            <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
-                                {{ entry.key }}
-                                {% if hasChild %}
-                                    <img class="cs-drop-icon" src="/assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                                {% endif %}
-                            </a>
+                            {% if hasChild %}
+                                {# Similarly, if the link is active, apply the necessary classes #}
+                                <a class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
+                                    {{ entry.key }}
+                                    {% if hasChild %}
+                                        <img class="cs-drop-icon" src="/assets/svgs/Icons_down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                    {% endif %}
+                                </a>
+                            {% else %}
+                                <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
+                                    {{ entry.key }}
+                                </a>
+                            {% endif %}
 
                             {# Dropdowns have another ul/li set up within the parent li. Render in the same way as a normal link #}
                             {% if hasChild %}

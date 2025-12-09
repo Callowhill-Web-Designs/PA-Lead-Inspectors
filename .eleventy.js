@@ -1,6 +1,7 @@
 // Plugin Imports
 const pluginDirectoryOutput = require("@11ty/eleventy-plugin-directory-output");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
+const pluginLLMs = require('eleventy-plugin-llms-txt');
 
 // Filter Imports
 const filterFormatDate = require("./src/config/filters/formatDate");
@@ -15,6 +16,7 @@ const configCritical = require("./src/config/plugins/critical");
 const configImage = require("./src/config/plugins/image");
 const configCss = require("./src/config/eleventy/css");
 const configJs = require("./src/config/eleventy/javascript");
+const configLLMs = require("./src/config/plugins/llms");
 
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
@@ -36,6 +38,13 @@ module.exports = function (eleventyConfig) {
     // Automatically generates a sitemap based on the HTML files being generated
     // https://github.com/quasibit/eleventy-plugin-sitemap
     eleventyConfig.addPlugin(pluginSitemap, configSitemap);
+
+    /* 🤖 LLMs Generation
+     * Creates llms.txt automatically using domain from _data/client.json
+     * Documentation: https://github.com/CleverCloud/eleventy-plugin-llms-txt
+     */
+    eleventyConfig.addPlugin(pluginLLMs, configLLMs);
+
 
     // Converts <img> tags to responsive <picture>s. An opt-in feature. Please read config/plugins/image.js to find out more
     // https://github.com/saneef/eleventy-plugin-img2picture
