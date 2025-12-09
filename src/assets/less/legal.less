@@ -1,0 +1,194 @@
+/*-- -------------------------- -->
+<---       Legal Tabs          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #legal-tabs-1693 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+        
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-tab-wrapper {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .cs-tab-header {
+            display: flex;
+            border-bottom: 2px solid #e5e5e5;
+            background-color: #fff;
+        }
+
+        .cs-tab-button {
+            flex: 1;
+            padding: 1.25rem 1rem;
+            border: none;
+            background-color: transparent;
+            color: #767676;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: var(--primary);
+                transform: scaleX(0);
+                transition: transform 0.3s;
+            }
+
+            &:hover {
+                color: var(--bodyTextColorBlack);
+                background-color: #f9f9f9;
+            }
+
+            &.active {
+                color: var(--primary);
+                
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        .cs-tab-content {
+            display: none;
+            padding: 2rem 1.5rem;
+            animation: fadeIn 0.4s ease-in;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .cs-tab-title {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: left;
+            max-width: 100%;
+            margin: 0 0 1.5rem 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        .cs-tab-text {
+            font-size: 1rem;
+            line-height: 1.75em;
+            text-align: left;
+            width: 100%;
+            max-width: 100%;
+            color: var(--bodyTextColor);
+
+            h3 {
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.5em;
+                margin: 2rem 0 0.75rem 0;
+                color: var(--headerColor);
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
+
+            p {
+                margin: 0 0 1rem 0;
+                
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            ul {
+                margin: 1rem 0;
+                padding-left: 1.5rem;
+
+                li {
+                    margin: 0.5rem 0;
+                    color: var(--bodyTextColor);
+                }
+            }
+
+            strong {
+                color: var(--headerColor);
+                font-weight: 700;
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #legal-tabs-1693 {
+        .cs-tab-button {
+            font-size: 1.125rem;
+            padding: 1.5rem 2rem;
+        }
+
+        .cs-tab-content {
+            padding: 3rem 2.5rem;
+        }
+
+        .cs-tab-text {
+            font-size: 1.0625rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin: 2.5rem 0 1rem 0;
+            }
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #legal-tabs-1693 {
+        .cs-tab-content {
+            padding: 4rem 3.5rem;
+        }
+
+        .cs-tab-text {
+            columns: 1;
+            column-gap: 3rem;
+
+            h3 {
+                break-after: avoid;
+            }
+
+            p, ul {
+                break-inside: avoid;
+            }
+        }
+    }
+}
