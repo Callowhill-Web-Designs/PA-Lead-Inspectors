@@ -16,10 +16,10 @@ backend:
     openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
 
 # Better Decap + Bridge logo (optional)
-logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+logo_url: https://paleadinspect.com/wp-content/uploads/2024/06/pa-lead-inspectors-logo-new.jpg
 
 # Add site links in Decap CMS (optional)
-site_url: https://paleadinspect.com/wp-content/uploads/2024/06/pa-lead-inspectors-logo-new.jpg
+site_url: https://paleadinspect.com/
 
 # Where should uploaded files be saved
 media_folder: src/assets/images/cms

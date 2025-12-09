@@ -1,0 +1,96 @@
+---
+title: "Blog | PA Lead Inspectors"
+description: "Stay informed about lead inspection, lead-based paint safety, EPA regulations, and home safety tips from Pennsylvania's trusted lead inspection experts."
+permalink: 'blog/'
+eleventyNavigation:
+    key: 'Blog'
+    order: '100'
+    parent: 'Resources'
+---
+
+{% extends 'layouts/base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <section id="int-banner-1693">
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/inspector2.jpeg">
+            <source media="(min-width: 601px)" srcset="/assets/images/inspector2.jpeg">
+            <img loading="lazy" decoding="async" src="/assets/images/inspector2.jpeg" alt="lead inspector" width="1920" height="1080" aria-hidden="true">
+        </picture>
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-breadcrumb">
+                    <a href="/" class="cs-breadcrumb-link">Home</a>
+                    <span class="cs-breadcrumb-separator">/</span>
+                    <span class="cs-breadcrumb-current">Blog</span>
+                </div>
+                <h1 class="cs-int-title">Lead Safety Blog</h1>
+                <p class="cs-text">
+                    Expert insights on lead inspection, safety regulations, and protecting your family from lead hazards in Pennsylvania.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--              Main Blog Content               -->
+    <!-- ============================================ -->
+
+    <section id="blog-main-1693">
+        <div class="cs-container">
+            {% if collections.post | length == 0 %}
+                <div class="cs-no-posts">
+                    <h2 class="cs-no-posts-title">No Posts Yet</h2>
+                    <p class="cs-no-posts-text">Check back soon for expert insights on lead inspection and home safety.</p>
+                </div>
+            {% else %}
+                <div class="cs-blog-layout">
+                    {%- for post in collections.post | reverse -%}
+                        <article class="cs-blog-article">
+                            <!--Main Article Image-->
+                            <a href="{{ post.url }}" class="cs-blog-image-wrapper">
+                                <picture class="cs-blog-image">
+                                    <img
+                                    src="{{ post.data.image }}"
+                                    alt="{{ post.data.imageAlt }}"
+                                    width="795"
+                                    height="400"
+                                    loading="lazy"
+                                    decoding="async" />
+                                </picture>
+                            </a>
+                            <!--Article Info-->
+                            <div class="cs-article-info">
+                                <div class="cs-blog-meta">
+                                    <span class="cs-blog-author">{{ post.data.author }}</span>
+                                    <span class="cs-blog-separator">•</span>
+                                    <span class="cs-blog-date">{{ post.date | formatDate }}</span>
+                                </div>
+                                <h2 class="cs-blog-title">
+                                    <a href="{{ post.url }}" class="cs-blog-link">{{ post.data.title }}</a>
+                                </h2>
+                                <p class="cs-blog-desc">
+                                    {{ post.data.description }}
+                                </p>
+                                <a href="{{ post.url }}" class="cs-read-more">
+                                    Read More
+                                    <svg class="cs-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6667 5L16.6667 10L11.6667 15M16.6667 10H3.33337" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    {%- endfor -%}
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
