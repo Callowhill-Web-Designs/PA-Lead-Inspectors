@@ -14,9 +14,9 @@
                 <img class="cs-onscroll" src="/assets/images/logodark.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
             </a>
             <div class="cs-top-contact">
-                <a href="tel:+84 1985 33 999" class="cs-top-link">
+                <a href="tel:{{ client.phoneForTel }}" class="cs-top-link">
                     <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-stroke-white.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
-                    (123) 456-7890
+                    {{ client.phoneFormatted }}
                 </a>
             </div>
             <a href="/schedule/" class="cs-button-solid cs-nav-button">Schedule An Inspection</a>
