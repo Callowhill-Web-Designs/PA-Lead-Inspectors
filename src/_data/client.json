@@ -1,15 +1,15 @@
 {
     "name": "PA Lead Inspectors",
     "email": "matthew@paleadinspect.com",
-    "phoneForTel": "123-456-7890",
-    "phoneFormatted": "(123) 456-7890",
+    "phoneForTel": "610-888-7601",
+    "phoneFormatted": "(610) 888-7601",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
         "city": "Denver",
         "state": "CO",
         "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "mapLink": "https://share.google/oDnEmCCa5Ci4Q4QFV"
     },
     "social": {
         "facebook": "https://www.facebook.com/",
