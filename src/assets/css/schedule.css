@@ -195,12 +195,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-1693 {
+  #contact {
     padding: var(--sectionPadding);
     background-color: #f7f7f7;
     position: relative;
   }
-  #contact-1693 .cs-container {
+  #contact .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -210,17 +210,17 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #contact-1693 .cs-content {
+  #contact .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #contact-1693 .cs-title {
+  #contact .cs-title {
     margin: 0 0 1rem 0;
   }
-  #contact-1693 .cs-contact-info {
+  #contact .cs-contact-info {
     width: 100%;
     max-width: 43.75rem;
     margin-top: 2rem;
@@ -228,7 +228,7 @@
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-  #contact-1693 .cs-contact-card {
+  #contact .cs-contact-card {
     text-decoration: none;
     padding: 1.5rem;
     background: #fff;
@@ -239,39 +239,39 @@
     gap: 1.25rem;
     transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
   }
-  #contact-1693 .cs-contact-card:hover {
+  #contact .cs-contact-card:hover {
     border-color: var(--primary);
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(237, 137, 0, 0.2);
   }
-  #contact-1693 .cs-contact-card:hover .cs-card-icon {
+  #contact .cs-contact-card:hover .cs-card-icon {
     transform: scale(1.1);
   }
-  #contact-1693 .cs-card-icon {
+  #contact .cs-card-icon {
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
     transition: transform 0.3s;
   }
-  #contact-1693 .cs-card-content {
+  #contact .cs-card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
-  #contact-1693 .cs-card-label {
+  #contact .cs-card-label {
     font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--primary);
   }
-  #contact-1693 .cs-card-value {
+  #contact .cs-card-value {
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--headerColor);
   }
-  #contact-1693 .cs-form {
+  #contact .cs-form {
     width: 100%;
     max-width: 39.375rem;
     padding: 2.5rem 1.5rem;
@@ -282,7 +282,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  #contact-1693 .cs-form-title {
+  #contact .cs-form-title {
     font-family: var(--headingFontFamily);
     font-size: 1.5rem;
     font-weight: 700;
@@ -291,7 +291,7 @@
     color: var(--headerColor);
     text-align: center;
   }
-  #contact-1693 .cs-label {
+  #contact .cs-label {
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 1.5em;
@@ -300,7 +300,7 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-  #contact-1693 .cs-input {
+  #contact .cs-input {
     font-size: 1rem;
     width: 100%;
     height: 3.5rem;
@@ -312,21 +312,21 @@
     box-sizing: border-box;
     transition: border-color 0.3s;
   }
-  #contact-1693 .cs-input::placeholder {
+  #contact .cs-input::placeholder {
     color: var(--bodyTextColor);
     opacity: 0.5;
   }
-  #contact-1693 .cs-input:focus {
+  #contact .cs-input:focus {
     outline: none;
     border-color: var(--primary);
   }
-  #contact-1693 .cs-textarea {
+  #contact .cs-textarea {
     min-height: 7.5rem;
     padding: 1rem;
     font-family: inherit;
     resize: vertical;
   }
-  #contact-1693 .cs-recaptcha {
+  #contact .cs-recaptcha {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -334,12 +334,12 @@
     margin: 0.5rem 0;
     /* Style the reCAPTCHA iframe container */
   }
-  #contact-1693 .cs-recaptcha > div {
+  #contact .cs-recaptcha > div {
     transform-origin: center;
     display: flex;
     justify-content: center;
   }
-  #contact-1693 .cs-submit {
+  #contact .cs-submit {
     width: 100%;
     margin-top: 0.5rem;
     border: none;
@@ -348,30 +348,30 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #contact-1693 .cs-contact-info {
+  #contact .cs-contact-info {
     grid-template-columns: repeat(2, 1fr);
   }
-  #contact-1693 .cs-form {
+  #contact .cs-form {
     padding: 3rem 2.5rem;
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #contact-1693 .cs-container {
+  #contact .cs-container {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
-  #contact-1693 .cs-content {
+  #contact .cs-content {
     text-align: left;
     align-items: flex-start;
     max-width: 45%;
   }
-  #contact-1693 .cs-contact-info {
+  #contact .cs-contact-info {
     margin-top: 2.5rem;
     grid-template-columns: 1fr;
   }
-  #contact-1693 .cs-form {
+  #contact .cs-form {
     max-width: 34.375rem;
   }
 }
