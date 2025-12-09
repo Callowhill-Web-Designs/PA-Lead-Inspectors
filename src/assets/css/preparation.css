@@ -1,7 +1,6 @@
 /*-- -------------------------- -->
 <---       Introduction         -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-intro-1693 {
@@ -29,11 +28,9 @@
     margin-bottom: 0;
   }
 }
-
 /*-- -------------------------- -->
 <---     Preparation Steps      -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-steps-1693 {
@@ -139,7 +136,6 @@
     color: var(--bodyTextColor);
   }
 }
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #prep-steps-1693 .cs-item {
@@ -159,7 +155,6 @@
     transform: rotate(45deg);
   }
 }
-
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #prep-steps-1693 .cs-container {
@@ -180,11 +175,9 @@
     right: -3rem;
   }
 }
-
 /*-- -------------------------- -->
 <---    Pre-Inspection Checklist -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-checklist-1693 {
@@ -249,7 +242,6 @@
     margin-top: 0.125rem;
   }
 }
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #prep-checklist-1693 .cs-checklist-wrapper {
@@ -257,11 +249,9 @@
     gap: 3rem;
   }
 }
-
 /*-- -------------------------- -->
 <---       What to Expect       -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-expect-1693 {
@@ -332,7 +322,6 @@
     color: var(--bodyTextColor);
   }
 }
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #prep-expect-1693 .cs-expect-list {
@@ -341,11 +330,9 @@
     gap: 1.5rem;
   }
 }
-
 /*-- -------------------------- -->
 <---       Failed Testing       -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-failed-1693 {
@@ -405,11 +392,9 @@
     color: var(--bodyTextColor);
   }
 }
-
 /*-- -------------------------- -->
 <---    Remediation Process     -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-remediation-1693 {
@@ -494,7 +479,6 @@
     color: var(--bodyTextColor);
   }
 }
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #prep-remediation-1693 .cs-remediation-list {
@@ -509,11 +493,9 @@
     left: 2.1875rem;
   }
 }
-
 /*-- -------------------------- -->
 <---           CTA              -->
 <--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #prep-cta-1693 {
