@@ -326,6 +326,19 @@
     font-family: inherit;
     resize: vertical;
   }
+  #contact-1693 .cs-recaptcha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    /* Style the reCAPTCHA iframe container */
+  }
+  #contact-1693 .cs-recaptcha > div {
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+  }
   #contact-1693 .cs-submit {
     width: 100%;
     margin-top: 0.5rem;
