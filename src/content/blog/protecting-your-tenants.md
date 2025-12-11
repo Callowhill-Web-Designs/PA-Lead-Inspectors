@@ -1,5 +1,5 @@
 ---
-title: Protecting Your Tenants: Lead Safety Tips for Landlords
+title: Protecting Your Tenants; Lead Safety Tips for Landlords
 description: Discover how you can prevent health risks and maintain a safe environment for your tenants.
 author: Matthew Barkann
 date: 2025-07-18T16:31:00.000-05:00
