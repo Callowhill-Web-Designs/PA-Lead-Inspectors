@@ -1,8 +1,9 @@
 ---
 title: How to Comply with Lead Inspection Laws in Philadelphia and Norristown
-description: Learn how to ensure compliance with local lead inspection laws in Philadelphia & Norristown.
+description: Learn how to ensure compliance with local lead inspection laws in
+  Philadelphia & Norristown.
 author: Matthew Barkann
-date: 2025-06-20T16:31:00.000-05:00
+date: 2025-06-20T17:30:00.000-04:00
 tags:
   - post
 image: /assets/images/blog/townhousestock.webp
