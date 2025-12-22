@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Website Form Submission</title>
+  <style>
+    .email-body {
+      margin: 0;
+      padding: 0;
+      background-image: linear-gradient(135deg, #0F1419 0%, #1A2332 50%, #0F1419 100%)!important;
+    }
+
+    .email-wrapper {
+      background-image:
+        linear-gradient(rgba(65, 191, 252, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(65, 191, 252, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      min-height: 100vh;
+      position: relative;
+      font-family: Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .email-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0;
+      background: rgba(15, 22, 28, .6);
+      border-radius: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: rgba(22, 25, 73, 0.1) 0px 0px 40px 0px;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+
+    .email-header {
+      width: auto;
+      color: #fff;
+      background-image: linear-gradient(135deg, #0F1419 0%, #1A2332 50%, #0F1419 100%);
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .email-header h1 {
+      margin: 0;
+      font-size: 1.6em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .email-content {
+      padding: 40px 20px;
+    }
+
+    .email-content h2 {
+      color: #fff;
+      opacity: 1;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .email-content .email-link {
+      color: #fff;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .email-content .email-link:hover {
+      color: #9933FF;
+    }
+
+    .email-content h3 {
+      color: #ffffff;
+      opacity: .9;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .email-content .email-date {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .spacer {
+      height: 40px;
+    }
+
+    .form-details {
+      margin: 40px 0px 10px 0;
+      border-radius: 8px;
+      background: #f0f4fc;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #e3eafc;
+    }
+
+    .form-details p {
+      margin: 8px 0;
+      font-size: 1em;
+    }
+
+    .email-footer {
+      background-image: linear-gradient(135deg, #0F1419 0%, #1A2332 50%, #0F1419 100%);
+      color: #bbbbbb;
+      text-align: center;
+      font-size: 0.95em;
+      padding: 16px 32px;
+    }
+
+    .email-footer .footer-link{
+      text-decoration: underline;
+      color: #bbbbbb;
+      transition: color 0.3s ease;
+    }
+
+    .email-footer .footer-link:hover {
+      color: #E87A2F;
+    }
+
+    .cs-button-primary {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff !important;
+      padding: 18px 32px;
+      background-image: linear-gradient(135deg, #2630be 0%, #161949 100%);
+      border-radius: 8px;
+      box-shadow: 0 0px 32px rgba(22, 25, 73, 0.3);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .cs-button-primary:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(135deg, #60D8FF 0%, #41BFFC 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+    .cs-button-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 40px rgba(65, 191, 252, 0.4);
+    }
+    .cs-button-primary:hover:before {
+      opacity: 1;
+    }
+
+    @media only screen and (min-width: 48rem) {
+      .email-content {
+        padding: 40px 40px;
+      }
+    }
+
+  </style>
+</head>
+<body class="email-body">
+  <div class="email-wrapper">
+    <div class="email-container">
+      <div class="email-header">
+        <h1>New Website Form Submission</h1>
+      </div>
+      <div class="email-content">
+        <h2>You've received a new lead from <br><a href="https://paleadinspect.com/" class="email-link">paleadinspect.com</a></h2>
+        <div class="form-details">
+          <p><strong>Name:</strong> {{=gives["340405211"]["data"]["name"]}}</p>
+          <p><strong>Email:</strong> {{=gives["340405211"]["data"]["email"]}}</p>
+          <p><strong>Phone:</strong> {{=gives["340405211"]["data"]["phone"]}}</p>
+          <p><br></p>
+          <p><strong>Address:</strong> {{=gives["340405211"]["data"]["address"]}}</p>
+          <p><strong>Message:</strong><br>{{=gives["340405211"]["data"]["message"]}}</p>
+        </div>
+        <div class="spacer"></div>
+        <a href="mailto:{{=gives["340405211"]["data"]["email"]}}" class="cs-button-primary">
+            Email Lead
+        </a>
+      </div>
+      <div class="email-footer">
+        Powered By: <a href="https://callowhillwebdesigns.com" target="_blank" rel="noopener" class="footer-link">Callowhill Web Designs LLC</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
