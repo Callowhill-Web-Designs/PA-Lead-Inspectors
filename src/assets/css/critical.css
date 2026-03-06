@@ -99,14 +99,14 @@
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    line-height: 20px;
     text-align: center;
     text-decoration: none;
     min-width: 12.5rem;
     margin: 0;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
-    padding: 0 3rem;
+    padding: 1.25rem 2rem;
     color: #fff;
     background-color: var(--primary);
     border-radius: 3rem;
