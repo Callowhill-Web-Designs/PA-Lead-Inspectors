@@ -1,5 +1,5 @@
 ---
-title: "PA Lead Inspectors | Certified Lead Testing & Inspection Services"
+title: "Lead Inspection Philadelphia | EPA-Certified Lead-Safe Certs | PA Lead Inspectors"
 description: "Professional lead inspection and testing services throughout Pennsylvania. EPA certified inspectors providing comprehensive lead-based paint assessments for homes and commercial properties."
 permalink: '/'
 eleventyNavigation:
@@ -12,6 +12,29 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css">
     <script src="/assets/js/particles.js" defer></script>
     <script src="/assets/js/stats-animation.js" defer></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "PA Lead Inspectors",
+        "url": "{{ client.domain }}",
+        "telephone": "{{ client.phoneFormatted }}",
+        "email": "{{ client.email }}",
+        "description": "EPA-certified lead inspections and Lead-Safe certification for pre-1978 rental properties in Philadelphia. 48-72 hour turnaround.",
+        "areaServed": [
+            {"@type": "City", "name": "Philadelphia"},
+            {"@type": "AdministrativeArea", "name": "Montgomery County, PA"},
+            {"@type": "AdministrativeArea", "name": "Delaware County, PA"},
+            {"@type": "AdministrativeArea", "name": "Bucks County, PA"},
+            {"@type": "AdministrativeArea", "name": "Chester County, PA"}
+        ],
+        "openingHoursSpecification": [
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00"}
+        ],
+        "priceRange": "$$"
+    }
+    </script>
 {% endblock %}
 
 {% extends 'layouts/base.html' %}
@@ -26,10 +49,10 @@ eleventyNavigation:
             <div class="cs-content">
                 <span class="cs-topper">EPA Certified Lead Inspections</span>
                 <h1 class="cs-title">
-                    Protecting Pennsylvania Families From Lead Hazards
+                    EPA-Certified Lead Inspections in Philadelphia
                 </h1>
                 <p class="cs-text">
-                    Professional lead-based paint inspection services for homes, commercial properties, and childcare facilities throughout Pennsylvania.
+                    Lead-Safe certification for pre-1978 rentals — 48–72 hour turnaround. We keep your certs on file and remind you before they expire.
                 </p>
                 <a href="/schedule" class="cs-button-solid">Book Your Inspection in 60 Seconds</a>
             </div>
@@ -127,6 +150,26 @@ eleventyNavigation:
                     <source media="(min-width: 601px)" srcset="/assets/images/inspector2.jpeg">
                     <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/inspector2.jpeg" alt="testing equipment" width="183" height="158">
                 </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--      Philadelphia Rental License Compliance  -->
+    <!-- ============================================ -->
+
+    <section id="philly-compliance-523">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Rental License Compliance</span>
+                <h2 class="cs-title">Philadelphia Rental License Lead Compliance</h2>
+                <p class="cs-text">
+                    Philadelphia law requires every pre-1978 rental property to hold a current Lead-Safe or Lead-Free certificate. If your certificate lapses, it can hold up your rental license renewal — and you can't legally collect rent on an unlicensed unit.
+                </p>
+                <p class="cs-text">
+                    PA Lead Inspectors handles the full process: EPA-certified inspection, lab-analyzed dust wipe sampling, certified report in 48–72 hours, and ongoing certificate tracking with expiration reminders. We work with landlords, property managers, and realtors across Philadelphia and Montgomery, Delaware, Bucks, and Chester counties.
+                </p>
+                <a href="/philadelphia-lead-safe-certification/" class="cs-button-solid">Learn About Lead-Safe Certification</a>
             </div>
         </div>
     </section>
